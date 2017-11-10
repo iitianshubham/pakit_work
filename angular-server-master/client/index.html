@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We connect travellers and senders to make delivery cheaper and faster">
+    <meta name="keywords" content="luggage space,share,deliver">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Pakit</title>
+	<style>
+		[ng-click] {
+		cursor: pointer;
+	}
+	body,h1,h2,h3,h4,h5,p,a,label,button {font-family: 'Quicksand', sans-serif, 'Gotham-Book';}
+	</style>
+	<base href="/" >
+</head>
+<body ng-app="pakit">
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '427675024272714',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.9'
+      });
+      FB.AppEvents.logPageView();   
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+	<div class="container-fluid" style="padding: 0;">
+		<div ui-view></div>
+	</div>
+	<!-- // <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script> -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- CSS link goes here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/signup.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/connected_users.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/new_pakit.css">
+	<link rel="stylesheet" href="css/new_css/pay.css" />
+	<link rel="stylesheet" type="text/css" href="css/new_css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/Homepage.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/new_css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/new_css/user_details.css">
+    <link rel="stylesheet" type="text/css" href="css/new_css/UserProfile.css">
+    <link rel="stylesheet" type="text/css" href="css/new_css/DetailsForm.css">
+
+    <!-- responsive goes here -->
+    <link rel="stylesheet" type="text/css" href="responsive/connected_users_responsive.css">
+    <link rel="stylesheet" type="text/css" href="responsive/new_pakit_responsive.css">
+    <link rel="stylesheet" type="text/css" href="responsive/pay_responsive.css">
+    <link rel="stylesheet" type="text/css" href="responsive/user_details_responsive.css">
+    <link rel="stylesheet" type="text/css" href="responsive/login_responsive.css">
+	<!-- CSS link ends here -->
+	<link rel="stylesheet" href="bower_components/angular-google-places-autocomplete/src/autocomplete.css">
+
+
+	<!-- Required dependencies -->
+	<!-- Script goes here -->
+    
+	<!-- Script ends here -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATsUzOeo6yAwC12ffDAsQF0YEMLYU4t6I&libraries=placeses,visualization,drawing,geometry,places"></script>
+
+	<script type="text/javascript" src="./bower_components/lodash/lodash.min.js"></script>
+	<script type="text/javascript" src="./bower_components/cloudinary-core/cloudinary-core.js"></script>
+
+	<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+	<script type="text/javascript" src="./bower_components/cloudinary_ng/js/angular.cloudinary.js"></script>
+	<script src="//cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js"></script>
+	<script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCzZPbVGgKZKpXa38TEmshyCpUxnnmrSHo",
+	    authDomain: "pakit-d6933.firebaseapp.com.firebaseapp.com",
+	    databaseURL: "https://pakit-d6933.firebaseio.com/",
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+
+	<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+	
+	<!-- Digits SDK -->
+<!-- 	<script id="digits-sdk" src="https://cdn.digits.com/1/sdk.js" async></script>
+	<script type="text/javascript" src="./bower_components/angular-digits/dist/angular-digits.js"></script>
+ -->
+
+	<!-- bootstrap includes -->
+
+	<script src="bower_components/angular-google-places-autocomplete/src/autocomplete.js"></script>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>  
+
+	<script src="//code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<script src="js/main.js"></script> 
+	<script src="js/custom.js"></script> 
+
+
+<!--     
+
+    <script src="bower_components/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+-->
+
+
+
+<!-- <script type="text/javascript" src="./dist/app.min.js"></script> -->
+
+<script type="text/javascript" src="./main.js"></script>
+<script src="controllers/navController.js"></script>
+<script src="controllers/opt1Controller.js"></script>
+<script src="controllers/opt2Controller.js"></script>
+<script src="controllers/opt3Controller.js"></script>
+<script src="controllers/view1Controller.js"></script>
+<script src="controllers/loginController.js"></script>
+<script src="controllers/signupController.js"></script>
+<script src="controllers/cardNavController.js"></script>
+<script src="controllers/mypostingController.js"></script>
+<script src="controllers/account.js"></script>
+<script src="controllers/account_form.js"></script>
+<script src="controllers/checkout.js"></script>
+<script>
+            $(document).ready(function(){
+            $(".owl-carousel").owlCarousel(
+                {
+                    dots:false,
+                    autoplay:true,
+                    smartSpeed:300,
+                    loop:true,
+                    margin:13,
+                    responsive:{
+                        0:{
+                            items:2
+                        },
+                        320:{
+                            items:3
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+                });
+            });
+        </script>
+	<script src="js/interactivity.js"></script> 
+
+
+</body>
+
+
+</html>

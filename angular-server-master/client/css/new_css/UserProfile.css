@@ -1,0 +1,293 @@
+#userprofile_navbar{
+    background-color: deeppink;
+    height: 35px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+} 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_navcol img{
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: auto;
+    display: inline-block;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_disabledLink{
+    color: darkgray;
+    cursor: pointer;   
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_disabledLink:hover{
+    color: darkslategray;
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_a{
+    color: black;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_a:hover{
+    cursor: default;
+    color: black;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+#userprofile_tabs a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+#userprofile_tabs{
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_tabrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_line{
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 0.7%;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_centralcard{
+    box-shadow: 0px 0px 8px #888888;
+    background-color: white
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_centralcardrow{
+    margin-top: 4%;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_profilepic img{
+    height: 150px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 8px #888888;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_changepic{
+    color: deepskyblue;
+    font-size: 13;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_profilepic{
+    text-align: center;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_changepic:hover{
+    cursor: pointer;
+    color: dodgerblue;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_profilepic a{
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_detailitem img{
+    height: 14px;
+    width: 14px;
+    float: left;
+    margin-right: 4%;
+    margin-left: 2%;
+    margin-top: 1%;
+    
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_detailitem p{
+    color: gray;
+    font-weight: bold;
+    font-size: 12;
+    float: left;
+    left: 0px;
+    position: relative;
+    margin-top: 1%;
+    display: inline;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.userprofile_detailitem{
+    margin-bottom: 3%;
+}
+
+.userprofile_uppercard{
+    box-shadow: 0px 0px 8px #888888;
+    background-color: white
+}
+
+.userprofile_uppercard p{
+    position: relative;
+}
+
+.userprofile_headingname{
+    font-size: 14;
+    margin-top: 3%;
+    padding: 11px 0;
+}
+
+.userprofile_uppercard img{
+    width: 100%;
+}
+
+.userprofile_uppercard a{
+    text-decoration: none;
+}
+
+.progress{
+    height: 10px;
+    margin-top: 10%;
+}
+
+.progress-bar{
+    background-color: orange; !important
+}
+
+.progressdesc{
+    color: #ffae42;
+    font-size: 18;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 4px 0;
+}
+
+.percent{
+    font-size: 10;
+    color: gray;
+    margin-top: 0px;
+}
+
+.userprofile_improve{
+    color: deepskyblue;
+    font-size: 11;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.userprofile_improve:hover{
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.userprofile_lowercard{
+    box-shadow: 0px 0px 8px #888888;
+    text-align: center;
+    background-color: white
+}
+
+.userprofile_lowercard p{
+    padding: 15px 0;
+    font-size: 11;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.userprofile_hr{
+    border-bottom: 1px solid lightgray;
+}
+
+.userprofile_loweritems p{
+    color: lightslategray;
+    padding: 15px 0;
+}
+
+.userprofile_loweritems:hover{
+    cursor: pointer;
+}
+
+.userprofile_loweritems p:hover{
+    color: darkslategray;
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .userprofile_profilepic{justify-content: center; margin-left: 5%;}
+    .userprofile_details{align-content: center; justify-content: center;}
+    .userprofile_uppercard{margin-top: 2%; float: left;}
+    .userprofile_lowercard{margin-top: 2%; margin-bottom: 7%; float: right;}
+    .userprofile_centralcard{margin-left: 4%; margin-top: 7.5%;}
+    .userprofile_name{font-size: 21;}
+    .userprofile_upperdetails{text-align: center;}
+}
+
+@media (max-width:991px){
+    .userprofile_centralcard{margin-top:8%; margin-bottom: 5%;}
+    .userprofile_uppercard{margin-top:24%; margin-bottom: 5%; padding-bottom: 2%;}
+    .userprofile_profilepic img{margin-left: 20%; margin-top: 4%;}
+    .othercards{margin-left: 4%;}
+    .userprofile_headingname{padding-top: 2.8%;}
+    .userprofile_detailtitle{width: 40%; margin-left: 15%;}
+    .userprofile_upperdetails{text-align: center;}
+    .userprofile_details{margin-top: 2%;}
+    .userprofile_name{font-size: 21;}
+}
+
+@media (min-width:1200px){
+    .userprofile_lowercard{margin-left: 5%; margin-top: 4%;}
+    .userprofile_uppercard{margin-left: 5%; margin-top: 30%;}
+    .userprofile_centralcard{margin-left: 8%; margin-top: 7%;}
+    .userprofile_upperdetails{margin-left: 0%;}
+    .userprofile_detailtitle{width: 30%;}
+    .userprofile_float-left{float: left;}
+    .userprofile_name{font-size: 16;}
+    
+}
+
+.userprofile_float-right{
+    float: right;
+    width: 40%;
+}
+
+.userprofile_email{
+    clear: left;
+}
+
+.userprofile_contactnoemail{
+    font-size: 11;
+    color: gray;
+}
+
+.userprofile_number{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.userprofile_name{
+    margin-bottom: 4px;
+}
+
+.userprofile_rule{
+    clear: both;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+}
+
+.userprofile_terms{
+    margin-bottom: 0px;
+}
+.account_section{
+    margin-top: -9%;
+}
+.userprofile_editprofile{
+    float: right;    
+}
+.userprofile_editprofile p a{
+    color: blue;
+    font-size: 16px;
+    font-weight: 700;
+}
+.userprofile_editprofile p a{
+    padding: 0 2px 5px 10px;
+}

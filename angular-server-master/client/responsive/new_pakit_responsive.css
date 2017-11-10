@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1220px){
+    .new_pakit_form .new_pakit_input{
+        width: 40%;
+    }
+    .new_pakit_form .new_pakit_input[type=submit]{
+        width: 34%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    .new_pakit_options{
+        padding-left: 0;
+        text-align: center;
+    }
+    .new_pakit_form .new_pakit_input{
+        width: 40%;
+    }
+    .new_pakit_form .new_pakit_input[type = submit]{
+        width: 40%;
+    }
+}
+
+
+
+@media only screen and (max-width: 980px){
+    .new_pakit_form .new_pakit_input[type = submit]{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width: 790px){
+    .new_pakit_form .new_pakit_input{
+        width: 40%;
+    }
+    .new_pakit_form .new_pakit_input[type=submit]{
+        width: 40%;
+    }
+    #new_pakit_myNavbar .new_pakit_myNavbar_ul .new_pakit_myNavbar_li{
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 670px){
+    .new_pakit_form .new_pakit_input{
+        width: 50%;
+    }
+    .new_pakit_form .new_pakit_input[type=submit]{
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (max-width: 530px){
+    .new_pakit_form .new_pakit_input{
+        width: 60%;
+    }
+    .new_pakit_form .new_pakit_input[type=submit]{
+        width: 60%;
+    }
+}
+
+
+
+@media only screen and (max-width: 420px){
+    .new_pakit_form .new_pakit_input{
+        width: 70%;
+    }
+    .new_pakit_form .new_pakit_input[type=submit]{
+        margin-right: 50px;
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .new_pakit_input_feild{
+        margin-left: 30px;
+    }
+    .new_pakit_form .new_pakit_input{
+        margin-left: 10px;
+    }
+    .new_pakit_form new_pakit_label{
+        margin-left: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 350px){
+    .new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li{
+        padding: 0 10px;
+    }
+    .new_pakit_input_feild{
+        margin-left: 20px;
+    }
+    .new_pakit_form .new_pakit_input{
+        margin-left: 10px;
+    }
+    .new_pakit_form .new_pakit_label{
+        margin-left: 60px;
+    }
+    .new_pakit_form .new_pakit_input{
+        width: 80%;
+    }
+    .new_pakit_form .new_pakit_input[type = submit]{
+        width: 80%;
+        margin-left: 25px;
+    }
+}

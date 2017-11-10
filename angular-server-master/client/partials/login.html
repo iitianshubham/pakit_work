@@ -1,0 +1,48 @@
+<div class = "container">            
+    <!--    ******************************* PAKIT LOGO ***********************    -->
+        <div class = "login_pakit_logo"><img src = "image/logo.png" class = "login_pakit"></div>
+<!--    ******************************* PAKIT LOGO ENDS ***********************    -->
+
+<!--    ******************************* FACEBOOK LOGIN BOX STARTS HERE ***********************    -->
+    <!-- <div class = "row"> -->
+        <!-- <div class = "col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 login_fb_login" ng-click="fbLogin()"> -->
+             <a href = "#">
+                <p>                          
+                    <span class = "login_fb_logo"><img src = "image/fb_blue.png"></span>
+                    <span class = "login_login_text">Login with Faceboook</span>
+                </p>
+            </a>
+        </div>
+    </div>
+<!--    ******************************* FACEBOOK LOGIN BOX ENDS HERE ***********************    -->
+
+    <p class = "login_or">OR</p>
+    
+<!--    ******************************* FORM STARTS HERE ***********************    -->
+    <div class = "row">
+        <div class = "col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 login_inputs">
+            <form class = "login_email_and_password" ng-submit="submit(form)" novalidate>
+                <div class = "login_email_input">
+                    <label id = "email_label" class = "login_label_feild"> Email </label>
+                    <input type = "email" id = "email" class = "login_input_feild" required ng-model="form.email" name="email" ng-blur="store()" ng-required="true"/>
+                </div>
+                <div class = "login_password_input">
+                    <label id = "password_label" class = "login_label_feild"> Password </label>
+                    <input type = "password" id = "password" class = "login_input_feild" required ng-model="form.password" ng-blur="store()" name="password" ng-required="true"/>
+                    <p>
+                        <label ng-show="error" style="color: red; font-size: 12px;">Wrong Password</label>
+                    </p>
+                </div>
+            
+<!--    ******************************* LOGIN BUTTON STARTS HERE ***********************    -->                            
+                <p class = "login_login_submit">
+                    <button class = "login_login_button" ng-disabled="form1.$invalid">Login</button>
+                </p>
+<!--    ******************************* LOGIN BUTTON ENDS HERE ***********************    -->                            
+            
+                <p class = "login_if_not_registered">Not registered? <a ui-sref="signup" class = "login_create_an_account_link">Create an account</a></p>
+            </form>   
+        </div>
+    </div>    
+<!--    ******************************* FORM ENDS HERE ***********************    -->     
+</div>

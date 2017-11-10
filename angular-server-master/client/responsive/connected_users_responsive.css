@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1260px){
+
+	.connected_users_myNavbar_li{
+		text-align: center;
+	}
+	.connected_users_exterior_box{
+		border: none;
+	}
+}
+
+
+@media only screen and (max-width: 1190px){
+    .connected_users_left_box{
+        width: 70%;
+        margin-left: 15%;
+        height: initial;
+    }
+    .connected_users_right_box{
+        width: 100%;
+    }
+    .connected_users_box{
+        margin-left: 16.5%;
+    }
+    .connected_users_meeting_point_and_chat_and_paynow{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .connected_users_chat_and_paynow {
+        text-align: right;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .connected_users_parcel_image{
+        border-right: none;
+    }
+    .connected_users_parcel_description{
+        border-top: 2px solid #E1E1E1;
+    }
+    .connected_users_box{
+        margin-left: 0;
+    }
+    .connected_users_meeting_point{
+        text-align: center;
+    }
+    #connected_users_map{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .connected_users_chat_and_paynow{
+        text-align: center;
+    }
+    .connected_users_chat_button button , .connected_users_pay_button button{
+        margin-top: 50px;
+    }
+    .connected_users_edit_description{
+        margin-bottom: 1%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .connected_users_left_box{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 581px){
+    .connected_users_chat_button .connected_users_chat_and_paynow_button {
+        margin-top: 40px;
+    }
+    .connected_users_pay_button .connected_users_chat_and_paynow_button{
+        margin-top: 20px;
+    }
+    #connected_users_map{
+        width: 110%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 446px){
+    .connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .connected_users_new_pakit .connected_users_main_row_a{
+        padding-right: 15px;
+    }
+    .connected_users_current_pakit .connected_users_main_row_a{
+        padding-left: 15px;
+    }
+    .connected_users_dots{
+        margin-top: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 398px){
+    .connected_users_card_flight_details , .connected_users_card_baggage_details{
+        display: block;
+        font-size: 80%;
+    }
+    .connected_users_card_baggage_details{
+        padding-top: 5px;
+        margin-left: 25px;
+    }
+    .connected_users_card_chat{
+        margin-right: 5px;
+    }
+    .connected_users_card_location , .connected_users_card_facebook , .connected_users_card_education , .connected_users_card_workplace , .connected_users_card_rating{
+	padding: 0 5px;
+    }
+}
+
+
+@media only screen and (max-width: 341px){
+    .connected_users_card_chat:hover{
+        padding: 3.5px 10px;
+    }
+}

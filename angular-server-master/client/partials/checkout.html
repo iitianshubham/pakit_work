@@ -1,0 +1,101 @@
+<div class = "pay_interior_lower_box" id = "collapse_card" class = "collapse">    
+    <p class = "pay_checkout">Checkout</p>
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "row pay_first_row">
+<!--   ================================================ LEFTMOST CARD STARTS      ==================================================     -->                                     
+                <div class = "col-md-3 pay_first_card">
+                    <ul class = "pay_customer_role">
+                        <li>
+                            <p>
+                                Pakiter
+                            </p>
+                        </li>
+                    </ul>
+                    <p class = "pay_image"><img src = "image/photo.jpg"></p>
+                    <p class = "pay_name">{{cuser.name}}Kuldeep Parewa</p>
+                    <p class = "row pay_baggage_information">
+                        <span class = "col-md-6 col-sm-6 col-xs-6 pay_date  pay_baggage_information_span"><img src = "image/flight.svg">{{cuser.entry.date | date : "MMM dd, yyyy"}}May 23,2017</span>
+                        <span class = "col-md-6 col-sm-6 col-xs-6 pay_weight  pay_baggage_information_span"><img src = "image/bc.svg"><span id = "pay_weight_value">{{cuser.entry.weight}}3Kg</span> {{cuser.entry.name}}carrying</span>
+                    </p>
+                    <p class = "pay_icons">
+                        <span class = "pay_facebook pay_icons_span"><img src = "image/facebook.svg"></span>
+                        <span class = "pay_education pay_icons_span"><img src = "image/education.svg"></span>
+                        <span class = "pay_workplace pay_icons_span"><img src = "image/workplace.svg"></span>
+                        <span class = "pay_rating pay_icons_span"><img src = "image/rating.svg"></span>
+                    </p>
+                </div>
+<!--   ================================================  LEFTMOST CARD ENDS      ==================================================     -->                                     
+<!--   ================================================  MIDDLE CARD STARTS      ==================================================     --> 
+                <div class = "col-md-3 pay_second_card">
+                   <ul class = "pay_customer_role">
+                       <li>
+                            <p>Pakit</p>
+                       </li>
+                    </ul>
+                    <p class = "pay_image"><img src = "image/choley_kulche.jpg"></p>
+                    <p class = "pay_name">Choley Kulche <span class = "pay_edit"><img src = "image/workplace.svg"></span></p>
+                    <p class = "row pay_pakit_information">
+                        It should not be squeezed.Please handle thses with and dont eat it while carrying it to the destination.Samjhe?    
+                    </p>
+                </div>
+<!--   ================================================  MIDDLE CARD ENDS   ==================================================     -->                                     
+<!--   ================================================  RIGHTMOST CARD STARTS      ==================================================     -->                         
+                <div class = "col-md-6 pay_third_card">
+                    <p class = "pay_charges"> Charges </p>
+                    <div class = "pay_bill">
+                        <p class = "pay_pakit_cost"><span class = "pay_type_of_charges">Pakit Cost: </span><span class = "pay_money"> Rs. 460/-</span></p>
+                        <p class = "pay_sub_charges"><span class = "pay_type_of_charges">Sub Charges: </span><span class = "pay_money"> Rs. 100/-</span></p>
+                    </div>
+                        <div class = "pay_statement_with_checkbox">
+                            <form>
+                                <input type = "checkbox" class = "pay_statement_with_checkbox_input"/>
+                                <span class = "pay_statement">Add Rs. 6 for travel Insurance.</span>
+                            </form>
+                        </div>
+                </div>
+<!--   ================================================  RIGHTMOST CARD ENDS      ==================================================     -->     
+            </div>
+        </div>
+    </div>                        
+<!--   ================================================  TERMS AND CONDITIONS STARTS      ============================================= -->                         
+    <div class = "row pay_terms_and_conditions">
+        <form>
+            <input type = "checkbox" value = "" class = "pay_terms_and_conditions_input"/>
+            <span class = "pay_terms_statement">I agree to the Terms and Conditions</span>
+        </form>
+    </div>
+<!--   ================================================  TERMS AND CONDITIONS ENDS  ==================================================     -->                         
+<!--   ================================================  SAFETY TIPS STARTS      ==================================================     --> 
+    <div class = "row pay_last_row">                            
+        <div class = "col-md-6 pay_safety_tips">
+            <span class = "pay_few_safety_tips">FEW SAFETY TIPS</span>
+        <ul class = "pay_safety_tips_ul">
+            <li class = "pay_safety_tips_li">
+                <span class = "pay_few_safety_tips_span">I agree to the Terms and Conditions meet in a safe place.</span>
+            </li>
+            <li class = "pay_safety_tips_li">
+                <span class = "pay_few_safety_tips_span">I agree to the Terms and Conditions thik hai.</span>
+            </li>
+            <li class = "pay_safety_tips_li">
+                <span class = "pay_few_safety_tips_span">I agree to the Terms and Conditions thik nahi hai.</span>
+            </li>
+            <li class = "pay_safety_tips_li">
+                <span class = "pay_few_safety_tips_span">I agree to the Terms and Conditions challo lol lol lol.</span>
+            </li>
+            <li class = "pay_safety_tips_li">
+                <span class = "pay_few_safety_tips_span">I agree to the Terms and Conditions koi baat nahi.</span>
+            </li>
+        </ul>
+    </div>
+<!--   ================================================  PROCEED TO PA BUTTON STARTS      ==================================================     -->                             
+    <div class = "col-md-6 pay_proceed_to_pay">
+        <div class = "pay_total_amount_and_pay_button">
+            <p class = "pay_total_amount_and_net_money"><span class = "pay_total_amount">Total Amount: </span><span class = "pay_net_money">Rs. 566/-</span></p>
+            <p class = "pay_Pay_button"><button class = "pay_Pay_button_button">PROCEED TO PAY</button></p>
+        </div>
+    </div>
+<!--   ================================================  PROCEED TO PAY BUTTON      ================================================     -->                             
+</div>
+<!--   ================================================  SAFETY TIPS ENDS   ==================================================     -->                       
+</div>

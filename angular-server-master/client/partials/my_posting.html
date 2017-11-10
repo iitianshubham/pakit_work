@@ -1,0 +1,76 @@
+ <div class="w3-container my_postings">
+
+  <div class="w3-row"  >
+
+    <div class="w3-col w3-card-4 my_post_cards" ng-repeat="post in postings">
+      <a href="#" ng-click="showPost(post)">
+        <div class="w3-container ">
+          <img src="{{imageType(post.type)}}" alt="Avatar" class="w3-left  w3-margin-right card-img round_img">
+          <div id="myposting_date">
+            <p >{{post.date | date: 'dd.MM.yyyy'}}</p>
+          </div>
+          <img src="../image/line.svg" alt="Avatar" class="myposting_line">
+          <p id="myposting_from">{{post.src_airport.airport_code}}</p>
+          <img src="../image/planebc.svg" alt="Avatar" class="from_to">
+          <p id="myposting_to">{{post.des_airport.airport_code}}</p>
+
+          <img src="../image/bag.svg" alt="Avatar" class="myposting_bag">
+          <div id="myposting_weight">
+            <p><b>Weight</b> : {{post.weight}}kg {{post.type}}</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+ <!-- <div class=" w3-card-4 reqcard" >
+
+            <div class="w3-container ">
+                <img src="../image/2.png" alt="Avatar" class="img-circle" id="reqcard_photo">
+                <div class="all_info">
+                        <div id="reqcard_name">
+                            <p><b>Kuldeep Parewa</b> </p>
+                        </div>
+                        <p id="reqcard_text"> Wants to <b>deliver</b> your pakit from <b>DEL-GAU</b></p>
+
+                        <div id="oneline">
+                            <p id="reqcard_date">April,21, 2017</p>
+                            <img src="../image/plane.png" alt="Avatar" class="reqcard_plane">
+                            <img src="../image/bag.svg" alt="Avatar" class="reqcard_bag">
+                            <div id="reqcard_weight">
+                                <p><b>5</b> Sending</p>
+                            </div>
+                        </div>
+
+                        <div id="line2">
+                   <img src="../image/line.svg" alt="Avatar" class="reqcard_line">
+
+
+                        <ul id="reqcard_icons">
+                            <li> <img src="../image/location.svg" alt="Avatar" id="reqcard_location"></li>
+                            <li> <img src="../image/facebook.svg" alt="facebook" id="reqcard_facebook"></li>
+                            <li> <img src="../image/school.svg" alt="school" id="reqcard_school"></li>
+                            <li> <img src="../image/workplace.svg" alt="workplace" id="reqcard_workplace"></li>
+                            <li> <img src="../image/rating.svg" alt="rating" id="reqcard_rating"></li>
+                        </ul>
+                    </a>
+
+                    <p id="reqcard_reject"> REJECT </p>
+                    <a href="" ng-click="inviteUser(user)"><p id="reqcard_accept">ACCEPT</p></a>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+    </div>
+     -->
+ 

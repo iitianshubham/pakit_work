@@ -1,0 +1,42 @@
+<div class="w3-card-4 row  main_card">
+    <div class="col-md-4">
+
+        <div class=" w3-card-4 cd" ng-repeat="user in usersToShow">
+
+            <div class="w3-container ">
+                <img src="{{user.image_url}}" alt="Avatar" class="img-circle" id="allcard_photo">
+                <div class="all_info">
+                    <a href="#" ng-click="showCurrUser(user)">
+                        <div id="allcard_name">
+                            <p><b>{{user.name}}</b> </p>
+                        </div>
+                        <div id="oneline">
+                            <p id="allcard_date">{{user.date | date : "dd.MM.yyyy"}}</p>
+                            <img src="../image/plane.png" alt="Avatar" class="allcard_plane">
+                            <img src="../image/bag.svg" alt="Avatar" class="allcard_bag">
+                            <div id="allcard_weight">
+                                <p><b>{{user.weight}} </b>  {{user.type}}</p>
+                            </div>
+                        </div>
+
+                        <ul id="allcard_icons">
+                            <li> <img src="../image/location.svg" alt="Avatar" id="allcard_location"></li>
+                            <li> <img src="../image/facebook.svg" alt="facebook" id="allcard_facebook"></li>
+                            <li> <img src="../image/school.svg" alt="school" id="allcard_school"></li>
+                            <li> <img src="../image/workplace.svg" alt="workplace" id="allcard_workplace"></li>
+                            <li> <img src="../image/rating.svg" alt="rating" id="allcard_rating"></li>
+                        </ul>
+                    </a>
+
+                   
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+
+</div>
+
+
+</div>

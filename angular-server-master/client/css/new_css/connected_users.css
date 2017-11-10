@@ -1,0 +1,560 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+*,*:after,*:before {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;}
+
+
+/*  ==================================  BODY STARTS    ====================================    */
+.connected_users_body{
+	background-color: #F5F5F5;
+}
+/*  ==================================  BODY ENDS    ====================================    */
+
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+/*  ==================================  NAVBAR STARTS    ====================================    */
+.connected_users_navigation{
+    background-color: deeppink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+/*  ==================================  NAVBAR ENDS   ====================================    */
+
+
+
+/*  ==================================  NEW PAKIT AND CURRENT PAKIT TABS STARTS    ====================================    */
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li{
+    display: inline-block;
+    padding: 0px 25px ;
+    margin: 0 15px;
+}
+.connected_users_main_row{
+    text-align: center;	
+    font-family: century gothic , Sans-serif;	
+    margin-top: 65px;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a{
+	position: relative;
+    text-decoration: none;
+    color:  darkgrey;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:hover{
+	color: #000;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*  ==================================  NEW PAKIT AND CURRENT PAKIT TABS ENDS    ====================================    */
+
+
+
+/*  ==================================  EXTERIOR BOX STARTS    ====================================    */
+.connected_users_exterior_box{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0.001px;
+}
+/*  ==================================  EXTERIOR BOX ENDS    ====================================    */
+
+
+
+/*  ==================================  INTERIOR UPPER BOX STARTS    ====================================    */
+.connected_users_interior_upper_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+    height: 60px;
+    background-color: #e2e2e2;      
+}
+
+/*  ==================================  FLIGHT LOGO STARTS    ====================================    */
+.connected_users_flight_logo{
+    float: left;
+}
+.connected_users_flight_logo img{
+    width: 60px;
+    height: 60px;
+}
+/*  ==================================  FLIGHT LOGO ENDS  ====================================    */
+
+.connected_users_date_and_collapse{
+    padding-top: 10px;
+}
+.connected_users_date{
+    float: left;
+    padding-left: 30px;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.connected_users_dropdown_and_collapse{
+    float: right;
+}
+.connected_users_dropdown_and_collapse .connected_users_collapse_link{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.connected_users_collapse_link{
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.connected_users_collapse_link:hover{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.connected_users_dots{
+    float: right;
+}
+.connected_users_dots:hover{
+    background-color: #b7b7b7;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+}
+.open>.dropdown-toggle.btn-primary , .open>.dropdown-toggle.btn-primary:hover{  
+    background-color: transparent;
+}
+.connected_users_date_and_collapse .connected_users_dots img{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.connected_users_date_and_collapse .connected_users_dots img:hover{
+    background-color: transparent;
+}
+.connected_users_from_to_profile_and_submain_and_baggage_weight{
+	clear: right;
+	padding-bottom: 0px;
+	text-align: center;				
+}
+.connected_users_from_to_profile{
+	display: inline-block;	
+	margin-left: 30px; 
+	float: left;
+}
+.connected_users_from , .connected_users_to , .connected_users_flight_direction{
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.connected_users_flight_direction img{
+	width: 100px;
+}
+.connected_users_precise_location{
+    font-size: 70%; 
+    margin-left: 15px;
+    color: #929292;
+    margin: 2px 15px;
+}
+.connected_users_form_precise_location{
+    margin-right: 25px;
+}
+.connected_users_to_precise_location{
+    margin-left: 25px;
+}
+.connected_users_connected_and_all_users{
+	display: inline-block;
+}
+.connected_users_connected_and_all_users .connected_users_connected_and_all_users_a{
+	text-decoration: none;
+	color: darkgrey;
+	position: relative;
+}
+.connected_users_connected_and_all_users .connected_users_connected_and_all_users_a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.connected_users_connected_and_all_users .connected_users_connected_and_all_users_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.connected_users_connected_and_all_users .connected_users_connected_and_all_users_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.connected_users_connected , .connected_users_all_users{
+	display: inline-block;
+	font-size: 12px;
+	font-family: century gothic , Sans-serif;
+	font-weight: 600;
+}
+.connected_users_connected{
+    padding-right: 25px;
+}
+.connected_users_all_users{
+    padding-left: 25px;
+}
+.connected_users_baggage_weight img{
+	width: 15px;
+	vertical-align: middle;
+}
+.connected_users_baggage_weight{
+	float: right;
+	padding-right: 40px;
+	font-family: century gothic , Sans-serif;
+	font-size: 14px;
+	color: #595959;
+}
+.connected_users_weight{
+	color: black;
+}
+/*  ==================================  INTERIOR UPPER BOX ENDS    ====================================    */
+
+
+
+/*  ==================================  INTERIOR LOWER BOX STARTS    ====================================    */
+.connected_users_interior_lower_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+}
+/*  ==================================  INTERIOR LOWER BOX ENDS    ====================================    */
+
+
+
+.connected_users_left_box , #connected_users_map , .connected_users_middle_box{
+	text-align: center;
+}
+
+
+
+/*  =============================================  LEFT BOX STARTS     ========================================    */
+.connected_users_left_box{
+	clear: both;
+	height: 475px;
+    background-color: #FAFAFA;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/*  =============================================  LEFT BOX ENDS     ========================================    */
+
+
+
+/*==========================================    CARDS STARTS    =================================*/
+.connected_users_card_card{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 80px;
+	border: 2px solid white;
+	box-shadow: 1px -1px 5px grey;
+	background-color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+.connected_users_card_card:hover{
+	box-shadow: 1px 0px 10px grey;
+}
+.connected_users_card_card:hover{
+	border: 3px solid #1fd2f2;
+}
+.connected_users_card_image img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 500px;
+}
+.connected_users_card_name_and_notifications{
+	display: inline-block;
+}
+.connected_users_card_name{
+	position: absolute;
+	top: 15px;
+	left: 60px;
+	font-family: century gothic , Sans-serif;
+	font-weight: 600;
+}
+.connected_users_card_notifications {
+	width: 4px;
+	float: right;
+}
+.connected_users_card_notifications .dots:hover{
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    padding: 4px 2px;
+}
+.connected_users_card_notifications img{
+	height: 12px;
+	vertical-align: middle;
+}
+.connected_users_card_information{
+	display: inline-block;
+	clear: left;
+	float: left;	
+	transform: translateY(-20px);		
+	padding: 10px 0;
+}
+.connected_users_card_flight_details{
+	clear: right;
+	display: inline-block;
+	padding: 0 15px;
+	margin-left: 25px;
+}
+.connected_users_card_flight_logo{
+	width: 12px;
+	display: inline-block; 
+}
+.connected_users_card_date{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 200;
+	font-family: century gothic , Sans-serif;
+}
+.connected_users_card_baggage_details{
+	display: inline-block;
+	float: right;
+	padding: 0 15px;
+	font-family: century gothic , Sans-serif;
+}
+.connected_users_card_suitcase{
+	width: 12px;
+	display: inline-block;
+}
+.connected_users_card_weight{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+}
+.connected_users_card_symbols , .connected_users_card_location , .connected_users_card_facebook , .connected_users_card_education , .connected_users_card_workplace , .connected_users_card_rating{
+	display: inline-block;
+	padding: 0 8px;
+}
+.connected_users_card_symbols{
+    clear: both;
+	float: left;
+}
+.connected_users_card_symbols img{
+	width: 15px;
+}
+.connected_users_card_symbols .connected_users_card_facebook img{
+	width: 7px;
+}
+.connected_users_card_symbols .connected_users_card_location img{
+	width: 9px;
+}
+.connected_users_card_symbols .connected_users_card_workplace img{
+	width: 11px;
+}
+.connected_users_card_chat img{
+	width: 15px;
+}
+.connected_users_card_chat{
+	color: #66CB01;
+	float: right;
+    font-weight: 600;
+    margin-right: 40px;
+    font-size: 15px;
+    padding: 5px 20px
+}
+.connected_users_card_chat:hover{
+    background-color: #e2e2e2;
+    padding: 3.5px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.connected_users_card1{
+	padding: 10px;
+}
+.connected_users_card_notifications .connected_users_dots img{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.connected_users_card_notifications .connected_users_dots img:active{
+    background-color: transparent;
+    box-shadow: none;
+}
+/*==============================  CARD ENDS      =================================*/
+
+
+
+/* ============================ RIGHT BOX STARTS =======================*/
+.connected_users_right_box{
+    background-color: #F5F5F5;
+}
+.connected_users_box{
+    margin-top: 50px;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    background-color: #FAFAFA;
+    padding: 0px 10px;
+}
+.connected_users_parcel_image{
+    padding: 10px 0;
+    border-right: 2px solid #E1E1E1;
+}
+.connected_users_parcel_image p{
+    text-align: center;
+    font-family: century gothic , sans-serif;
+    font-size: 12px;
+    padding: 3px 0px;
+    font-weight: 600;
+}
+.connected_users_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.connected_users_parcel_type_image{
+    width: 10px;
+    margin-right: 5px;
+}
+.connected_users_parcel_description{
+    padding:  0 0 0 10px;
+}
+.connected_users_parcel_description .connected_users_parcel_description_p{
+    font-family: century gothic , sans-serif;
+    font-size: 12px;
+    color: #8E8E8E;
+    padding: 20px 10px 10px 0;
+}
+.connected_users_edit_description img{
+    width: 13px;
+}
+.connected_users_edit_description{
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+}
+.connected_users_edit_description:hover{
+    cursor: pointer;
+}
+.connected_users_progress{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.connected_users_progress_label .connected_users_progress_label_p {
+    color: black;
+    margin: 5px 0;
+    font-size: 10px;
+}
+.connected_users_progress_label .connected_users_progress_label_span{
+    padding: 0 0;
+    font-size: 10px;
+    font-weight: 600;
+}
+.connected_users_request_accepted{
+    text-align: right;
+    color: black;
+    /*padding-left: 20px;*/
+}
+.connected_users_payment_mode , .connected_users_pakit_collected{
+    text-align: center;
+    color: #999999;
+}
+.connected_users_pakit_delivered{
+    text-align: left;
+    color: #999999;
+    padding-left: 20px;
+}
+.connected_users_meeting_point_and_chat_and_paynow{
+    margin-top: 50px;
+}
+.connected_users_meeting_point{
+    font-family: century gothic , sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999999;
+}
+.connected_users_chat_and_paynow{
+    padding-right: 0;
+}
+.connected_users_chat_and_paynow .connected_users_chat_and_paynow_button{
+    padding: 15px 0;
+    width: 180px;
+    margin-top: 110px;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: century gothic , sans-serif;
+    box-shadow: 1px 1px 1px #CBCBCB;
+    outline: none;
+}
+.connected_users_chat_button{
+    margin-right: 15px;
+}
+.connected_users_pay_button{
+    margin: 0;
+    
+}
+.connected_users_chat_button .connected_users_chat_and_paynow_button{
+    background-color: #E2E2E2;
+    color: #4C4C4C;
+    box-shadow: -2px -2px 3px #CBCBCB;
+}
+.connected_users_pay_button .connected_users_chat_and_paynow_button{
+    background-color: #3FC4FF;
+    color: #FEFEFE;
+    box-shadow: -2px -2px 3px #CBCBCB;
+}
+.connected_users_chat_and_paynow .connected_users_chat_and_paynow_button:hover{
+    box-shadow: 0px 0px 5px #CBCBCB;
+}
+
+
+/*  ===========================================  MAP STARTS   =============================   */
+#connected_users_map{	
+    width: 85%;
+	height: 150px;
+    margin-top: 10px;
+}
+/*================================= MAP ENDS    ==============================*/
+
+
+/*  =================================== RIGHT BOX ENDS    ============================    */
+
+.card_nav_main_section{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -3%;
+
+}
+.three_dots{
+    float: right;
+}

@@ -1,0 +1,48 @@
+/* Font settings */
+
+@font-face {
+    font-family: 'Gotham book';
+    src: url('../fonts/gotham-book.woff') format('woff'), url('../fonts/gotham-book.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Gotham book','Arial';
+}
+
+/* 
+    Colors
+        APP THEME
+            #8CC63E
+            hsl(85,54%,50%)
+        APP THEME - DARK
+            #7EAF35
+            hsl(84,53%,45%)
+        GREEN THEME
+            #5ABD87
+            hsl(147, 43%, 55%)
+        GREEN THEME - DARK
+            #48B67A
+            hsl(147, 43%, 50%)
+        EMERALD
+            #2ECC71
+            rgb(46,204,113)
+            hsl(145,63%,49%)
+        NEPHRITIS
+            #27AE60
+            rgb(39,174,96)
+            hsl(145,63%,41%)
+        TURQUOISE
+            #1ABC9C
+            rgb(26,188,156)
+            hsl(168,75%,41%)
+        GREEN SEA
+            #16A085
+            rgb(22,160,133)
+            hsl(168,75%,35%)
+        RED - LIGHT
+            #E74C3C
+            hsl(5,78%,57%)
+        RED - DARK
+            #C0392B
+            hsl(5,63%,46%)
+*/

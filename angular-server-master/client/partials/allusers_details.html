@@ -1,0 +1,180 @@
+<div class = "user_details_interior_lower_box" id = "collapse_card" class = "collapse">
+    <div class = "row">
+<!--    ========================================    LEFT BOX STARTS     ===================================     -->                            
+        <div class = "col-md-4 col-xs-12 user_details_left_box">
+<!--    ========================================    CARD STARTS     ===================================     -->            
+            <div class = "user_details_card1">                 
+            <!-- <div class = "user_details_card1" ng-repeat="user in usersToShow"> -->
+                <div class = "user_details_card_card">
+                    <div class = "user_details_card_image">
+                        <!-- <img src = {{user.image_url}} alt = "customer image"> -->
+                        <img src = image/photo.jpg alt = "customer image">
+                    </div>
+                <a href="" ng-click="showUserDetail(user)">
+                    <div class = "user_details_card_name_and_notificatons">
+                        <div class = "user_details_card_name">
+                            {{user.name}}Kuldeep Parewa
+                        </div>
+                        <!-- <div class = "user_details_card_notifications">
+                             <div class="user_details_dropdown user_details_dots">
+                                <img src = "image/3 dots.svg" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">********</a></li>
+                                    <li><a href="#">########</a></li>
+                                    <li><a href="#">@@@@@@@@</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <span class="dropdown three_dots">
+                            <span class="dropbtn connected_users_myNavbar_icons">
+                                <img class="connected_users_myNavbar_images" src="image/3 dots.svg"/>
+                            </span>
+                            <div class="dropdown-content dropdown-menu-right">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </span>
+                    </div>
+                    <div class = "user_details_card_information">
+                        <div class = "user_details_card_flight_details">
+                            <div class = "user_details_card_flight_logo">
+                                <img src = "image/flight.svg" alt = "flight logo">
+                            </div>
+                            <div class = "user_details_card_date">
+                               {{user.date | date : "dd.MM.yyyy"}} May 23,2017
+                            </div>
+                        </div>
+                        <div class  = "user_details_card_baggage_details">
+                            <div class = "user_details_card_suitcase">
+                                <img src = "image/suitcase-04.svg" alt = "checkin baggage">
+                            </div>
+                            <div class = "user_details_card_weight">
+                               {{user.weight}} 3 kg 
+                            </div>
+                            carrying{{user.type}}
+                        </div>
+                    </div>  
+                    <div class = "user_details_card_symbols_and_invite">
+                        <div class = "user_details_card_symbols">
+                            <div class = "user_details_card_location">
+                                <img src = "image/location.svg">
+                            </div>
+                            <div class = "user_details_card_facebook">
+                                <img src = "image/facebook.svg">
+                            </div>
+                            <div class = "user_details_card_education">
+                                <img src = "image/education.svg">
+                            </div>
+                            <div class = "user_details_card_workplace">
+                                <img src = "image/workplace.svg">
+                            </div>
+                            <div class = "user_details_card_rating">
+                                <img src = "image/rating.svg">
+                            </div>
+                        </div>
+                </a>
+                        <div class = "user_details_card_invite" ng-click="inviteUser(user)">
+                            <img src = "image/invite.svg" id = "invite"> INVITE
+                        </div>
+                    </div>
+                </div>
+           </div>
+<!--    ========================================    CARD ENDS     ===================================     -->                                
+        </div>
+<!--    ========================================    LEFT BOX ENDS     ===================================     -->
+        
+<!--    ========================================    MIDDLE BOX STARTS     ===================================     -->                            
+        <div class = "col-md-4 col-xs-12 user_details_middle_box">
+            <div class = "user_details_middle_box_box">
+                <div class = "user_details_middle_box_customer">
+                    <div class = "user_details_middle_box_image">
+                        <img src = "https://lh3.googleusercontent.com/-OhOrkpybvhU/VbGeDhUAM_I/AAAAAAAAQ68/hOCeFTX_FbY/s576-Ic42/Rajma%252520Curry%252520Recipe%25252008.JPG" alt = "customer image">
+                    </div>
+                    <div class = "user_details_middle_box_name">
+                        Kuldeep Parewa{{currUser.name}}
+                    </div>
+                </div>
+                <div class = "user_details_middle_box_customer_details">
+                    <div class = "user_details_middle_box_flight_info">
+                        <div class = "user_details_middle_box_flight_logo">
+                            <img src = "image/flight.svg">
+                        </div>
+                        <div class = "user_details_middle_box_flight_no">
+                            Flight No. : 
+                        </div>
+                    </div>
+                    <div class = "user_details_middle_box_workplace_info">
+                        <div class = "user_details_middle_box_suitcase_logo">
+                            <img src = "image/suitcase-04.svg">
+                        </div>
+                        <div class = "user_details_middle_box_workplace">
+                            Workplace: {{currUser.Workplace}}
+                        </div>
+                    </div>
+                    <div class = "user_details_middle_box_education_info">
+                        <div class = "user_details_middle_box_education_logo">
+                            <img src = "image/education.svg">
+                        </div>
+                        <div class = "user_details_middle_box_education">
+                            Education: {{currUser.Education}}
+                        </div>
+                    </div>
+                    <div class = "user_details_middle_box_residence_info">
+                        <div class = "user_details_middle_box_home_logo">
+                            <img src = "image/hometown.svg">
+                        </div>
+                        <div class = "user_details_middle_box_residence">
+                            Hometown: {{currUser.Hometown}}
+                        </div>
+                    </div>
+                </div>
+                <div class = "user_details_middle_box_customer_reviews">
+                    <span class = "user_details_middle_box_review">
+                        Reviews
+                    </span>
+                    <span class="rating">
+                      <label>
+                        <input type="radio" name="rating" value="5" title="5 stars"> 5
+                      </label>
+                      <label>
+                        <input type="radio" name="rating" value="4" title="4 stars"> 4
+                      </label>
+                      <label>
+                        <input type="radio" name="rating" value="3" title="3 stars"> 3
+                      </label>
+                      <label>
+                        <input type="radio" name="rating" value="2" title="2 stars"> 2
+                      </label>
+                      <label>
+                        <input type="radio" name="rating" value="1" title="1 star"> 1
+                      </label>
+                    </span>
+                    <div class = "user_details_middle_box_arrow">
+                        
+                    </div>
+                </div>
+                <div class = "user_details_middle_box_invite_button">
+                    <button class = "user_details_invite_button"><img src = "image/invite.svg"> INVITE</button>
+                </div>
+             </div>
+        </div>
+<!--    ========================================    MIDDLE BOX ENDS     ===================================     -->                            
+        
+<!--    ========================================    MAP STARTS     ===================================     -->                            
+        <div class = "col-md-4 col-xs-12" id = "user_details_map">
+        </div>
+        <script>
+            function myMap() {
+            var mapOptions = {
+            center: new google.maps.LatLng( 26.194, 91.6931),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            var map = new google.maps.Map(document.getElementById("user_details_map"), mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvYMBdKNf2B76_9VTfgk8gWyjst1qkW4&callback=myMap"></script>
+<!--    ========================================    MAP ENDS     ===================================     -->                            
+    </div>
+</div>

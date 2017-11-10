@@ -1,0 +1,239 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+*,*:after,*:before {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;}
+
+
+/*  ===================================     BODY STARTS     =================================   */
+.new_pakit_body{
+	background-color: #F5F5F5;
+}
+/*  ===================================     BODY ENDS     =================================   */
+
+
+
+/*  ===================================     ALL BOOTSTRAP ROWS STARTS     =================================   */
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*  ===================================     ALL BOOTSTRAP ROWS ENDS    =================================   */
+
+
+
+/*  ===================================     NAVBAR STARTS     =================================   */
+.new_pakit_navigation{
+    background-color: #E61D69;
+}
+.new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li{
+    display: inline-block;
+    padding: 0px 25px ;
+    margin: 0 15px;
+    font-weight: 550;
+    
+}
+.new_pakit_main_row{
+    text-align: center;	
+    font-family: century gothic , Sans-serif;	
+}
+.new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li .new_pakit_main_row_a{
+	position: relative;
+    text-decoration: none;
+    color:  #9F9F9F;
+}
+.new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li .new_pakit_main_row_a:hover{
+	color: #4D4D4D;
+}
+.new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li .new_pakit_main_row_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #4D4D4D;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.new_pakit_main_row .new_pakit_main_row_ul .new_pakit_main_row_li .new_pakit_main_row_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*  ===================================     NAVBAR ENDS     =================================   */
+
+hr{
+    background-color: #DCDCDC;
+}
+
+/*  ===================================    EXTERIOR BOX STARTS     =================================   */
+.new_pakit_box{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #EDEDED;
+    font-family: century gothic , sans-serif;
+}
+/*  ===================================     EXTERIOR BOX ENDS     =================================   */
+
+
+
+/*  ===================================     LEFT BOX STARTS     =================================   */
+.new_pakit_left_box{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+.new_pakit_options{
+    border: none;
+    box-shadow: none;
+}
+.new_pakit_options .new_pakit_options_2{
+    font-weight: 600;
+    color: #767676;
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+.new_pakit_options .new_pakit_options_2:hover , .new_pakit_options .new_pakit_options_2:visited , .new_pakit_options .new_pakit_options_2:active , .new_pakit_options .new_pakit_options_2:link{
+    color: #767676;
+}
+.list-group.panel > .list-group-item {
+  background-color:  #EDEDED;
+  border: none; 
+}
+.list-group-submenu {
+  margin-left:20px;
+    border: none;
+}
+#new_pakit_club_baggage_extension{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+}
+#new_pakit_deliver_pakit_extension{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+}
+#new_pakit_send_pakit_extension{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+}
+#new_pakit_request_pakit_extension{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+}
+/*  ===================================     LEFT BOX ENDS    =================================   */
+
+
+
+/*  ===================================     RIGHT BOX STARTS    =================================   */
+.new_pakit_right_box{
+    padding: 8px 5px;
+    border-left: 1px solid #D7D7D7;
+}
+.new_pakit_right_box .new_pakit_inner_box{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #BBBBBB;
+}
+/*  ===================================     RIGHT BOX ENDS    =================================   */
+
+
+
+/*  ===================================     FORM STARTS    =================================   */
+.new_pakit_form{
+    padding-top: 50px;
+}
+.new_pakit_form .new_pakit_input{
+    border: none;
+    border-bottom: 1px solid #C6C6C6;
+    position: relative;
+    outline: none;
+    margin-left: 25px;
+    background-color: transparent;
+    color: #4D4D4D;
+    width: 30%;
+}
+.new_pakit_form .new_pakit_label{
+    color: #A3A3A3;
+    position: relative;
+    top: 15px;
+    left: 0;
+    font-weight: 100;
+    margin-left: 100px;
+    margin-top: 0px; 
+}
+.new_pakit_form img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+.new_pakit_input_feild{
+    margin-left: 50px;
+    padding: 0 5px;
+    padding-bottom: 40px;
+}   
+#new_pakit_input_para{
+    text-align: right;
+}
+.new_pakit_form .new_pakit_button{
+    border-radius: 2px;
+    padding: 0 auto;
+    height: 45px;
+    margin: 20px 70px 30px 0;
+    background-color: #42C4FF;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 90%;
+    box-shadow: 2px 2px 3px grey;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    width: 30%;
+}
+.new_pakit_form .new_pakit_button:hover{
+    box-shadow: 3px 4px 6px grey;
+    opacity: 0.8;
+}
+/*  ===================================     FORM ENDS    =================================   */
+
+
+
+/*  ===================================     JS MOVE LABEL FUNCTIONS STARTS  =================================   */
+.new_pakit_movelabelup{
+    position: relative;
+    top: 0px;
+    left: 100px;
+    font-size: 70%;
+    color: #42C4FF;
+    font-weight: 600;
+    transition: 0.2s;
+    font-family: century gothic , sans-serif;
+}
+.new_pakit_movelabeltodefault{
+    position: relative;
+    top: 15px;
+    left: 100px;
+    font-size: 100%;
+    font-weight: 100;
+    color: #A3A3A3;
+}
+.new_pakit_blueunderline{
+    border-bottom: 2px solid #42C4FF;
+    transition: 0.2s;
+}
+.new_pakit_underlinedefault{
+    border-bottom: 1px solid #C6C6C6;
+}
+/*  ===================================     JS MOVE LABEL FUNCTIONS ENDS    =================================   */

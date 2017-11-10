@@ -1,0 +1,148 @@
+<div class = "connected_users_interior_lower_box" id = "collapse_card" class = "collapse">
+    <div class = "row">
+<!--    =======================================  LEFT BOX STARTS   ====================================    -->                             
+    	<div class = "col-md-4 connected_users_left_box">
+<!--    =======================================  CARD STARTS   ====================================    -->                                 
+    		<!-- <div class = "connected_users_card1" ng-repeat="cuser in connected_users"> -->
+            <div class = "connected_users_card1">
+                <div class = "connected_users_card_card">
+                    <div class = "connected_users_card_image">
+                        <img src = "https://lh3.googleusercontent.com/-OhOrkpybvhU/VbGeDhUAM_I/AAAAAAAAQ68/hOCeFTX_FbY/s576-Ic42/Rajma%252520Curry%252520Recipe%25252008.JPG" alt = "customer image">
+                    </div>
+                    <div class = "connected_users_card_name_and_notificatons">
+                        <div class = "connected_users_card_name">
+                            {{cuser.name}}Kuldeep bhaiya
+                        </div>
+                        <!-- <div class = "connected_users_card_notifications">
+                            <div class="connected_users_dropdown connected_users_dots">
+                                <img src = "image/3 dots.svg" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">********</a></li>
+                                    <li><a href="#">########</a></li>
+                                    <li><a href="#">@@@@@@@@</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <span class="dropdown three_dots">
+                            <span class="dropbtn connected_users_myNavbar_icons">
+                                <img class="connected_users_myNavbar_images" src="image/3 dots.svg"/ height="13px">
+                            </span>
+                            <div class="dropdown-content dropdown-menu-right">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </span>
+                    </div>
+                    <div class = "connected_users_card_information">
+                        <div class = "connected_users_card_flight_details">
+                            <div class = "connected_users_card_flight_logo">
+                                <img src = "image/flight.svg" alt = "flight logo">
+                            </div>
+                            <div class = "connected_users_card_date">
+                                {{cuser.entry.date | date : "MMM dd, yyyy"}}
+                            </div>
+                        </div>
+                        <div class  = "connected_users_card_baggage_details">
+                            <div class = "connected_users_card_suitcase">
+                                <img src = "image/suitcase-04.svg" alt = "checkin baggage">
+                            </div>
+                            <div class = "connected_users_card_weight">
+                                {{cuser.entry.weight}} kg 
+                            </div>
+                            {{cuser.entry.name}}
+                        </div>
+                    </div>	
+                    <div class = "connected_users_card_symbols_and_chat">
+                        <div class = "connected_users_card_symbols">
+                            <div class = "connected_users_card_location">
+                                <img src = "image/location.svg">
+                            </div>
+                            <div class = "connected_users_card_facebook">
+                                <img src = "image/facebook.svg">
+                            </div>
+                            <div class = "connected_users_card_education">
+                                <img src = "image/education.svg">
+                            </div>
+                            <div class = "connected_users_card_workplace">
+                                <img src = "image/workplace.svg">
+                            </div>
+                            <div class = "connected_users_card_rating">
+                                <img src = "image/rating.svg">
+                            </div>
+                        </div>
+                        <div class = "connected_users_card_chat">
+                             CHAT    
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--    =======================================  CARD ENDS   ====================================    -->                                 
+        </div>
+<!--    =======================================  LEFT BOX ENDS   ====================================    --> 
+        
+<!--    =======================================  RIGHT BOX STARTS   ====================================    -->                             
+        <div class = "col-md-8 connected_users_right_box">
+            <div class = "row connected_users_precauitons">
+                <div class = "col-md-offset-2 col-md-8 connected_users_box">
+                    <div class = "row">
+                        <div class = "col-md-3 connected_users_parcel_image">
+                            <p><img src = "image/choley_kulche.jpg" class = "connected_users_image"></p>
+                            <p><img src = "image/bc.svg" class = "connected_users_parcel_type_image"><span>Parcel Type</span></p>
+                        </div>
+                        <div class = "col-md-9 connected_users_parcel_description">
+                            <p class = "connected_users_parcel_description_p">It should not be squezzed.Please handle these with care and don't eat it while carrying it
+                            to the destination.Samjhe?And don't shake the container too much varna pitoge!
+                            </p>
+                            <span class = "connected_users_edit_description"><img src = "image/workplace.svg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row connected_users_progress">
+                <div class = "col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
+                    <div class = "connected_users_progress_image">
+                        <img src = "image/Progress_1.svg">
+                    </div>
+                </div>
+            </div>
+            <div class = "connected_users_progress_label">
+                    <div class = "row">
+                        <span class = "col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2 connected_users_request_accepted connected_users_progress_label_span">Request Accepted</span>
+                        <span class = "col-md-2 col-sm-2 col-xs-2 connected_users_payment_mode connected_users_progress_label_span">Payment Mode</span>
+                        <span class = "col-md-2 col-sm-2 col-xs-2 connected_users_pakit_collected connected_users_progress_label_span">Pakit Collected</span>
+                        <span class = "col-md-2 col-sm-2 col-xs-2 connected_users_pakit_delivered connected_users_progress_label_span">Pakit Delivered</span>
+                    </div>
+            </div>
+            <div class = "row connected_users_meeting_point_and_chat_and_paynow">
+                <div class = "col-md-5 connected_users_meeting_point">
+                    Recommended Meeting Point
+<!--    =======================================  MAP STARTS   ====================================    -->                                         
+                    <div id = "connected_users_map"></div>
+                    <script>
+                        function myMap() {
+			            var mapOptions = {
+			            center: new google.maps.LatLng( 26.194, 91.6931),
+			            zoom: 10,
+			            mapTypeId: google.maps.MapTypeId.ROADMAP
+                            }
+			            var map = new google.maps.Map(document.getElementById("connected_users_map"), mapOptions);
+			            }
+		             </script>
+
+		           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvYMBdKNf2B76_9VTfgk8gWyjst1qkW4&callback=myMap"></script>
+<!--    =======================================  MAP ENDS   ====================================    -->                                         
+                </div>
+<!--    =======================================  BUTTONS STARTS   ====================================    -->                                     
+                <div class = "col-md-7 connected_users_chat_and_paynow">
+                    <span class = "connected_users_chat_button"><button class = "connected_users_chat_and_paynow_button" ng-click="initChat(cuser.uid)">CHAT</button></span>
+                    <span class = "connected_users_pay_button"><button class = "connected_users_chat_and_paynow_button" ng-click="checkout()">PAY NOW</button></span>
+                </div>
+<!--    =======================================  BUTTON ENDS   ====================================    -->                                     
+            </div>
+        </div>
+<!--    =======================================  RIGHT BOX ENDS   ====================================    -->                             
+    </div>
+</div>
+<!--    =======================================  INTERIOR LOWER BOX ENDS   ====================================    -->                     
+</div>

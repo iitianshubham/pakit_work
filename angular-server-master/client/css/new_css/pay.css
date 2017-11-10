@@ -1,0 +1,502 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+*,*:after,*:before {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;}
+
+/*  ======================================  BODY STARTS    ====================================    */
+.pay_body{
+	background-color: #F5F5F5;
+}
+/*  ======================================  BODY ENDS    ====================================    */
+
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+/*  ======================================  NAVBAR STARTS    ====================================    */
+.pay_navigation{
+    background-color: deeppink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+/*  ======================================  NAVBAR ENDS    ====================================    */
+
+
+
+/*  ======================================  NEW PAKIT AND CURRENT PAKIT TABS STARTS    ====================================    */
+.pay_main_row .pay_main_row_ul .pay_main_row_li{
+    display: inline-block;
+    padding: 0px 25px ;
+    margin: 0 15px;
+}
+.pay_main_row{
+    text-align: center;	
+    font-family: century gothic , Sans-serif;	
+    margin-top: 65px;
+}
+.pay_main_row .pay_main_row_ul .pay_main_row_li .pay_main_row_a{
+	position: relative;
+    text-decoration: none;
+    color:  darkgrey;
+}
+.pay_main_row .pay_main_row_ul .pay_main_row_li .pay_main_row_a:hover{
+	color: #000;
+}
+.pay_main_row .pay_main_row_ul .pay_main_row_li .pay_main_row_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.pay_main_row .pay_main_row_ul .pay_main_row_li .pay_main_row_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*  ======================================  NEW PAKIT AND CURRENT PAKIT TABS ENDS   ===================================    */
+
+
+
+/*  ======================================  EXTERIOR BOX STARTS    ====================================    */
+.pay_exterior_box{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0.001px;
+}
+/*  ======================================  EXTERIOR BOX ENDS   ===================================  */
+
+
+
+/*  ======================================  INTERIOR UPPER BOX STARTS    ====================================    */
+.pay_interior_upper_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+    height: 60px;
+    background-color: #e2e2e2;      
+}
+.pay_flight_logo{
+    float: left;
+}
+.pay_flight_logo img{
+    width: 60px;
+    height: 60px;
+}
+.pay_interior_lower_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+}
+.pay_date_and_collapse{
+    padding-top: 10px;
+}
+.pay_date{
+    float: left;
+    padding-left: 30px;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.pay_dropdown_and_collapse{
+    float: right;
+}
+.pay_dropdown_and_collapse button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.pay_collapse_link{
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.pay_collapse_link:hover{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.pay_dots{
+    float: right;
+}
+.pay_dots:hover{
+    background-color: #b7b7b7;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+}
+.open>.dropdown-toggle.btn-primary , .open>.dropdown-toggle.btn-primary:hover{  
+    background-color: transparent;
+}
+.pay_date_and_collapse .pay_dots img{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.pay_date_and_collapse .pay_dots img:hover{
+    background-color: transparent;
+}
+.pay_from_to_profile_and_submain_and_baggage_weight{
+	clear: right;
+	padding-bottom: 0px;
+	text-align: center;				
+}
+.pay_from_to_profile{
+	display: inline-block;	
+	margin-left: 30px; 
+	float: left;
+}
+.pay_from , .pay_to , .pay_flight_direction{
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.pay_flight_direction img{
+	width: 100px;
+}
+.pay_precise_location{
+    font-size: 70%; 
+    margin-left: 15px;
+    color: #929292;
+    margin: 2px 15px;
+}
+.pay_form_precise_location{
+    margin-right: 25px;
+}
+.pay_to_precise_location{
+    margin-left: 25px;
+}
+.pay_connected_and_all_users{
+	display: inline-block;
+}
+.pay_connected_and_all_users .pay_connected_and_all_users_a{
+	text-decoration: none;
+	color: darkgrey;
+	position: relative;
+}
+.pay_connected_and_all_users .pay_connected_and_all_users_a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.pay_connected_and_all_users .pay_connected_and_all_users_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.pay_connected_and_all_users .pay_connected_and_all_users_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.pay_connected , .pay_all_users{
+	display: inline-block;
+	font-size: 12px;
+	font-family: century gothic , Sans-serif;
+	font-weight: 600;
+}
+.pay_connected{
+    padding-right: 35px;
+}
+.pay_all_users{
+    padding-left: 35px;
+}
+.pay_baggage_weight img{
+	width: 15px;
+	vertical-align: middle;
+}
+.pay_baggage_weight{
+	float: right;
+	padding-right: 40px;
+	font-family: century gothic , Sans-serif;
+	font-size: 14px;
+	color: #595959;
+}
+.pay_weight{
+	color: black;
+}
+/*  ======================================  INTERIOR UPPER BOX ENDS    ====================================    */
+
+
+
+/*  ======================================  INTERIOR LOWER BOX STARTS    ====================================    */
+.pay_interior_lower_box{
+    background-color: #FAFAFA;
+    padding: 0 10px;
+}
+/*  ======================================  INTERIOR LOWER BOX  ENDS    ====================================    */
+
+
+.pay_interior_lower_box .pay_checkout{
+    clear: both;
+    text-align: left;
+    font-family: century gothic , sans-serif;
+    color: #4D4D4D;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 110%;
+}   
+.pay_first_row{
+    border: 1px solid #BFBFBF;
+    box-shadow: 1px 1px 1px grey;
+    background-color: #F5F5F5;
+}
+
+
+/*======================================      FIRST CARD  STARTS      ==============================*/
+.pay_first_card{
+    border: none;
+}
+.pay_customer_role{
+    float: right;
+    padding-top: 10px;
+}
+.pay_customer_role li{
+    color: #FDCE42;
+    font-size: 11.5px;
+    font-family: century gothic , sans-serif;
+}
+.pay_image{
+    text-align: center;
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.pay_image img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 100px;
+    border-color:#CECAC7;
+}
+.pay_name{
+    text-align: center;
+    font-family: century gothic , sans-serif;
+    color: #4D4D4D;
+    font-weight: 600;
+    font-size: 120%;
+}
+.pay_baggage_information .pay_baggage_information_span{
+    font-family: century gothic , sans-serif;
+    color: #919191;
+    padding: 10px 0;
+    font-weight: 100;
+    font-size: 90%;
+}
+.pay_baggage_information span #pay_weight_value{
+    color: #7B7B7B;
+    font-size: 90%;
+    font-weight: 600;
+}
+.pay_baggage_information .pay_date , .pay_weight{
+    text-align: center;
+}
+.pay_baggage_information .pay_baggage_information_span img{
+    width: 12px;
+    margin: 0 5px;
+}
+.pay_first_card .pay_icons{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pay_first_card .pay_icons .pay_icons_span{
+    padding: 0 8px;
+}
+.pay_first_card .pay_icons .pay_icons_span img{
+    cursor: pointer;
+    width: 13px;
+}
+.pay_first_card .pay_icons .pay_facebook img{
+    width: 7px;
+}
+/*=================================   FIRST CARD ENDS         ================================================*/
+
+
+
+/*=========================================     SECOND CARD STARTS     ==============================*/
+.pay_name .pay_edit img{
+    width: 10px;
+}
+.pay_name .pay_edit{
+    float: right; 
+    cursor: pointer;
+}
+.pay_second_card{
+    border: none;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+.pay_pakit_information{
+    padding: 10px 0px;
+    font-family: century gothic , sans-serif;
+    font-size: 75%;
+    color: #7A7A7A;
+    margin-bottom: 9px;
+}
+/*===================================  SECOND CARD ENDS      ==============================================*/
+
+
+
+/*=======================================        THIRD CARD STARTS    ===============================*/
+.pay_third_card{
+    background-color: #FAFAFA;
+    padding: 0 0;
+    height: initial;
+}
+.pay_charges{
+    padding: 5px 0;
+    padding-left: 50px;
+    border-bottom: 1px solid #E1E1E1;
+    color: #7F8180;
+    font-weight: 600;
+    font-family: century gothic , sans-serif;
+    font-size: 100%;
+}
+.pay_bill{
+    padding: 10px 50px;
+    color: #4E4E4E;
+    font-family: century gothic , sans-serif;
+    font-weight: 600;
+}
+.pay_pakit_cost , .pay_sub_charges{
+    padding: 5px 0;
+}
+.pay_money{
+    float: right;
+    margin-right: 150px;
+}
+.pay_insurance{
+    margin: 10px 0 0 50px;
+}
+.pay_statement_with_checkbox{
+    color: #4C4C4C;
+    font-family: century gothic , sans-serif;
+    font-size: 90%;
+    font-weight: 100;
+    margin: 26px 0;
+    margin-left: 50px;
+}
+.pay_statement_with_checkbox .pay_statement_with_checkbox_input{
+    bottom: 1px;
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    cursor: pointer;
+}
+.pay_statement_with_checkbox .pay_statement_with_checkbox_input:checked{
+  background: #42C4FF;
+}
+.pay_statement{
+    padding: 0 10px;
+}
+/*===================================       THIRD CARD ENDS            ===============================================*/
+
+
+
+/*  ======================================  TERMS AND CONDIITONS STARTS    ====================================    */
+.pay_terms_and_conditions{
+    float: right;
+    padding-top: 20px;
+}
+.pay_terms_and_conditions .pay_terms_statement{
+    margin: 0 15px;
+    color: #4D4D4D;
+    font-size: 90%;
+    font-family: century gothic , sans-serif;
+}
+.pay_terms_and_conditions .pay_terms_and_conditions_input{
+    margin-top: 0;
+    width: 19px;
+    height: 19px;
+    cursor:pointer;
+}
+/*  ======================================  TERMS AND CONDITIONS ENDS    ====================================    */
+
+
+
+/*  ======================================  SAFETY TIPS STARTS    ====================================    */
+.pay_last_row{
+    margin-top: 50px;
+    padding: 0 0;
+}
+.pay_safety_tips{
+    color: #FDCE42;
+    padding-right: 0px;
+    font-size: 95%;
+}
+.pay_safety_tips .pay_safety_tips_ul{
+    margin-top: 10px;
+}
+.pay_safety_tips .pay_safety_tips_ul .pay_safety_tips_li{
+    padding: 5px 0;
+    margin-left: 15px;
+}
+.pay_safety_tips .pay_safety_tips_ul .pay_safety_tips_li .pay_safety_tips_span{
+    color: #4D4D4D;
+    font-family: century gothic , sans-serif;
+}
+.pay_few_safety_tips{
+    font-size: 110%;
+}
+/*  ======================================  SAFETY TIPS ENDS  ====================================    */
+
+
+
+/*  ======================================  PROCEED TO PAY STARTS    ====================================    */
+.pay_proceed_to_pay{
+    font-size: 110%;
+    font-family: century gothic , sans-serif;
+}
+.pay_total_amount_and_pay_button{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.pay_total_amount_and_net_money{
+    font-weight: 600;
+    padding: 20px 0;
+    margin-top: 80px;
+    font-size: 115%;
+}
+.pay_total_amount{
+    color: #40C4FF;
+}
+.pay_Pay_button .pay_Pay_button_button{
+    background-color: #3FC4FF;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 55px;
+    color: white;
+    font-weight: 600;
+    font-size: 85%;
+    font-family: century gothic , sans-serif;
+    box-shadow:  -2px -2px 3px #CBCBCB;
+    outline: none;
+}
+.pay_Pay_button .pay_Pay_button_button:hover{
+    box-shadow:  2px 2px 5px #CBCBCB;
+    opacity: 0.9;
+}
+/*  ======================================  PROCEED TO PAY ENDS   ====================================    */

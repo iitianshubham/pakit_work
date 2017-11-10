@@ -1,0 +1,550 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+*,*:after,*:before {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;}
+
+
+.user_details_body{
+	background-color:  #F5F5F5;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+/*  ================================= NAVBAR STARTS ================================    */
+.user_details_navigation{
+    background-color: deeppink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+/*  ================================= NAVBAR ENDS ================================    */
+
+
+
+/*  ============================================   NEW PAKIT AND CURRENT PAKIT STARTS     ======================================= */
+.user_details_main_row .user_details_main_row_ul .user_details_main_row_li{
+    display: inline-block;
+    padding: 0px 25px ;
+    margin: 0 15px;
+    
+}
+.user_details_main_row{
+    text-align: center;	
+    font-family: century gothic , Sans-serif;	
+    margin-top: 65px;
+}
+.user_details_main_row .user_details_main_row_ul .user_details_main_row_li .user_details_main_row_a{
+	position: relative;
+    text-decoration: none;
+    color:  darkgrey;
+}
+.user_details_main_row .user_details_main_row_ul .user_details_main_row_li .user_details_main_row_a:hover{
+	color: #000;
+}
+.user_details_main_row .user_details_main_row_ul .user_details_main_row_li .user_details_main_row_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.user_details_main_row .user_details_main_row_ul .user_details_main_row_li .user_details_main_row_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*  ==========================================  NEW PAKIT AND CURRENT PAKIT TABS ENDS    =======================================     */  
+
+
+
+/*  ============================================  EXTERIOR BOX STARTS  ============================    */
+.user_details_exterior_box{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0.001px;
+}
+/*  ===============================================   EXTERIOR BOX ENDS    =======================================    */
+
+
+
+/*  =============================================    INTERIOR UPPER BOX STARTS    ======================================= */
+.user_details_interior_upper_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+    height: 60px;
+    background-color: #e2e2e2;      
+}
+.user_details_flight_logo{
+    float: left;
+}
+.user_details_flight_logo img{
+    width: 60px;
+    height: 60px;
+}
+.user_details_dropdown_and_collapse .user_details_dots:hover{
+    background-color: #b7b7b7;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+    padding: 0 0px;
+}
+.user_details_date_and_collapse{
+    padding-top: 10px;
+}
+.user_details_date{
+    float: left;
+    padding-left: 30px;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.user_details_dropdown_and_collapse{
+    float: right;
+}
+.user_details_dropdown_and_collapse button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.user_details_collapse_link{
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: century gothic , Sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.user_details_collapse_link:hover{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.user_details_dots{
+    float: right;
+}
+.user_details_dots:hover{
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    padding: 4px 2px;
+}
+.open>.dropdown-toggle.btn-primary , .open>.dropdown-toggle.btn-primary:hover{  
+    background-color: transparent;
+}
+.user_details_date_and_collapse .user_details_dots img{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.user_details_date_and_collapse .user_details_dots img:hover{
+    background-color: transparent;
+}
+.user_details_from_to_profile_and_submain_and_baggage_weight{
+	clear: right;
+	padding-bottom: 0px;
+	text-align: center;				
+}
+.user_details_from_to_profile{
+	display: inline-block;	
+	margin-left: 30px; 
+	float: left;
+}
+.user_details_from , .user_details_to , .user_details_flight_direction{
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.user_details_flight_direction img{
+	width: 100px;
+}
+.user_details_precise_location{
+    font-size: 70%; 
+    margin-left: 15px;
+    color: #929292;
+    margin: 2px 15px;
+}
+.user_details_form_precise_location{
+    margin-right: 25px;
+}
+.user_details_to_precise_location{
+    margin-left: 25px;
+}
+.user_details_connected_and_all_users{
+	display: inline-block;
+}
+.user_details_connected_and_all_users a{
+	text-decoration: none;
+	color: darkgrey;
+	position: relative;
+}
+.user_details_connected_and_all_users a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.user_details_connected_and_all_users a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.user_details_connected_and_all_users a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.user_details_connected , .user_details_all_users{
+	display: inline-block;
+	font-size: 12px;
+	font-family: century gothic , Sans-serif;
+	font-weight: 600;
+	padding: 0 25px;
+}
+.user_details_baggage_weight img{
+	width: 15px;
+	vertical-align: middle;
+}
+.user_details_baggage_weight{
+	float: right;
+	padding-right: 40px;
+	font-family: century gothic , Sans-serif;
+	font-size: 14px;
+	color: #595959;
+}
+.user_details_weight{
+	color: black;
+}
+/*  ===============================================  INTERIOR UPPER BOX ENDS   ===========================================     */
+
+
+
+/*  ==================================================  INTERIOR LOWER BOX STARTS    =========================================   */
+.user_details_interior_lower_box{
+    width: auto;
+    border: 0.1px solid #d1d1d1;
+}
+/*  ===============================================  INTERIOR LOWER BOX ENDS   =========================================   */
+
+.user_details_left_box , #user_details_map , .user_details_middle_box{
+	text-align: center;
+}
+
+
+/*     ================================================   LEFT BOX STARTS      ========================================    */
+.user_details_left_box{
+	clear: both;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/*  ====================================================  LEFT BOX ENDS  ==========================================  */
+
+
+/*==========================================CARDS STARTS=================================*/
+.user_details_card_card{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 80px;
+	border: 2px solid white;
+	box-shadow: 1px -1px 5px grey;
+	background-color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+.user_details_card_card:hover{
+	box-shadow: 1px 0px 10px grey;
+}
+.user_details_card_card:hover{
+	border: 3px solid #1fd2f2;
+}
+.user_details_card_image img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 500px;
+}
+.user_details_card_name_and_notifications{
+	display: inline-block;
+}
+.user_details_card_name{
+	position: absolute;
+	top: 15px;
+	left: 60px;
+	font-family: century gothic , Sans-serif;
+	font-weight: 600;
+}
+.user_details_card_notifications {
+	width: 4px;
+	float: right;
+}
+.user_details_card_notifications img{
+	height: 12px;
+	vertical-align: middle;
+}
+.user_details_card_information{
+	display: inline-block;
+	clear: left;
+	float: left;	
+	transform: translateY(-20px);		
+	padding: 10px 0;
+}
+.user_details_card_flight_details{
+	clear: right;
+	display: inline-block;
+	padding: 0 15px;
+	margin-left: 25px;
+}
+.user_details_card_flight_logo{
+	width: 12px;
+	display: inline-block; 
+}
+.user_details_card_date{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 200;
+	font-family: century gothic , Sans-serif;
+}
+.user_details_card_baggage_details{
+	display: inline-block;
+	float: right;
+	padding: 0 15px;
+	font-family: century gothic , Sans-serif;
+}
+.user_details_card_suitcase{
+	width: 12px;
+	display: inline-block;
+}
+.user_details_card_weight{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+}
+.user_details_card_symbols , .user_details_card_location , .user_details_card_facebook , .user_details_card_education , .user_details_card_workplace , .user_details_card_rating{
+	display: inline-block;
+	padding: 0 8px;
+}
+.user_details_card_symbols{
+	float: left;
+}
+.user_details_card_symbols .user_details_card_rating img{
+	width: 15px;
+}
+.user_details_card_symbols  .user_details_card_education img{
+    width: 15px;
+}
+.user_details_card_symbols .user_details_card_facebook img{
+	width: 7px;
+}
+.user_details_card_symbols .user_details_card_location img{
+	width: 8px;
+}
+.user_details_card_symbols .user_details_card_workplace img{
+    width: 13px;
+}
+.user_details_card_invite img{
+	width: 15px;
+}
+.user_details_card_invite{
+	color: #1fd2f2;
+	float: right;
+	padding: 5px 15px;
+}
+.user_details_card_invite:hover{
+    background-color: #e2e2e2;
+    padding: 4px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.user_details_card1{
+	padding: 10px;
+}
+.user_details_card_notifications .user_details_dots img{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.user_details_card_notifications .user_details_dots img:active{
+    background-color: transparent;
+}
+/*  =============================================    CARDS ENDS    ======================================= */
+
+
+
+/*============================== MIDDLE BOX =================================================*/
+.user_details_middle_box{
+    padding-left: 0;
+    padding-right: 0;
+}
+.user_details_middle_box_box{
+	width: 100%;
+	background-color: white;
+}
+.user_details_middle_box_image{
+	width: 70px;
+	margin: 0 auto;
+}
+.user_details_middle_box_image img{
+	width: 70px;
+	height: 70px;
+	border-radius: 500px;
+	padding: 0px  0;
+}
+.user_details_middle_box_name{
+	margin: 0 auto;
+	color:#b2b2b2;
+	font-weight: 600;
+	padding: 10px 0;
+	font-family: century gothic , Sans-serif;
+}
+.user_details_middle_box_customer{
+	border: none;
+	border-bottom: 1px solid #c1c1c1;
+	padding: 10px;
+	background-color: #f2f2f2;
+}
+.user_details_middle_box_customer_details img{
+	width: 20px;
+	vertical-align: middle;
+}
+.user_details_middle_box_flight_logo , .user_details_middle_box_flight_no , .user_details_middle_box_suitcase_logo , .user_details_middle_box_workplace ,.user_details_middle_box_education_logo , .user_details_middle_box_education , .user_details_middle_box_home_logo , .user_details_middle_box_residence{
+	display: inline-block;
+	padding: 8px;
+}
+.user_details_middle_box_customer_details{
+	border-bottom: 1px solid #c1c1c1;
+	padding: 30px 0;
+	background-color: #f2f2f2;
+}
+.user_details_middle_box_flight_info , .user_details_middle_box_workplace_info , .user_details_middle_box_education_info , .user_details_middle_box_residence_info{
+	text-align: left;
+	padding-left: 10px;
+	color: #5b5b5b;
+}	
+.user_details_middle_box_customer_reviews img{
+	width: 15px;
+}
+.user_details_middle_box_customer_reviews{
+	text-align: left;
+}
+.user_details_middle_box_review{
+	display: inline-block;
+	padding: 0 10px;
+	padding-left: 25px;
+	font-family: century gothic , Sans-serif;
+	color: black;
+	float: left;
+	margin-top: 5px
+}
+.user_details_middle_box_rating , .user_details_middle_box_star1 , .user_details_middle_box_star2 , .user_details_middle_box_star3 , .user_details_middle_box_star4 , .user_details_middle_box_star5 {
+	display: inline-block;
+}
+.user_details_middle_box_arrow{
+	float: right;
+	margin-right: 30px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #919191;
+}
+.user_details_middle_box_customer_reviews{
+	padding: 10px 0;
+	border-bottom: 1px solid #c1c1c1;
+}
+.user_details_middle_box_invite_button button{
+	margin-top: 80px;
+	padding: 15px 0;
+	width: 100%;
+	background-color: #1fd2f2;
+	font-weight: 900;
+	cursor: pointer;
+	border: none;
+	color: white;
+}
+.user_details_middle_box_invite_button .user_details_invite_button{
+	background: url('invite.svg') no-repeat;
+	background-position: 35%;	
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	background-size: 20px 100px;
+}
+.user_details_middle_box_invite_button .user_details_invite_button img{
+    width: 20px;
+    margin-right: 10px;
+}
+/*================================ MIDDLE BOX ENDS ===============================================*/
+
+
+
+/*  =============================================    MAP STARTS    ======================================= */
+#user_details_map{	
+	width: 33.333333%;
+	height: 495px;		
+}
+/*  =============================================    MAP ENDS    ======================================= */
+
+.collapse_near_dots{
+    width: 22px;
+    height: 13px;
+    cursor: pointer;
+}
+.collapse_near_dots_icon{
+	padding: 10px 0px;
+    text-align: center;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width: 8em;
+}
+
+.rating input {
+    position: absolute;
+    left: -999999px;
+}
+
+.rating label {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating > label:before {
+    position: relative;
+    font: 24px/1 FontAwesome;
+    display: block;
+    content: "\f005";
+    color: #ccc;
+    background: -webkit-linear-gradient(-45deg, #d9d9d9 0%, #b3b3b3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > label.selected:before,
+.rating > label.selected ~ label:before {
+    color: #f0ad4e;
+    background: -webkit-linear-gradient(-45deg, yellow 0%, yellow 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,62 @@
+<div class="card_nav_main_section">
+    <div class = "connected_users_interior_upper_box">    
+        <div class = "connected_users_flight_logo">
+            <img src = "{{avatar}}" alt="Avatar">
+        </div>
+        <div class = "connected_users_date_and_collapse">
+            <div class = "connected_users_date">
+                {{currCard.date | date : "MMM dd, yyyy"}}
+            </div>
+           <div class = "connected_users_dropdown_and_collapse">
+            <button data-target = "#collapse_card" data-toggle = "collapse" class = "connected_users_collapse_link">COLLAPSE</button>
+             <!-- <div class="connected_users_dropdown connected_users_dots">
+                <img src = "image/3 dots.svg" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">********</a></li>
+                    <li><a href="#">########</a></li>
+                    <li><a href="#">@@@@@@@@</a></li>
+                </ul>
+            </div> -->
+            <span class="dropdown three_dots">
+                <span class="dropbtn collapse_near_dots_icon">
+                    <img class="collapse_near_dots" src="image/3 dots.svg"/>
+                </span>
+                <div class="dropdown-content dropdown-menu-right">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </span>
+
+            </div>
+        </div>
+          <div class = "connected_users_from_to_profile_and_submain_and_baggage_weight">
+          <div class = "connected_users_from_to_profile">   
+              <div class = "connected_users_from">{{currCard.from}}</div>
+              <div class =  "connected_users_flight_direction"><img src = "image/plane.svg"></div>
+              <div class = "connected_users_to">{{currCard.to}}</div>
+          </div>      
+         <div class = "connected_users_connected_and_all_users">
+            <div class = "connected_users_connected" ng-class="{ active: isActive('navbar.card_navbar.connected_users') }"><a href = "#1" class = "connected_users_connected_and_all_users_a" ng-click="changeViews('navbar.card_navbar.connected_users')">Connected</a></div>
+            <div class = "connected_users_all_users" ng-class="{ active: isActive('navbar.card_navbar.allusers_grid') || isActive('navbar.card_navbar.allusers_details')}"><a href = "#2"  class = "connected_users_connected_and_all_users_a" ng-click="changeViews('navbar.card_navbar.allusers_details')">All Users</a></div>
+         </div> 
+         <span class = "connected_users_baggage_weight">
+            <span> <img src = "image/suitcase-04.svg" class = "connected_users_baggage"></span>
+            <span>Weight : </span>
+            <span class = "connected_users_weight"> {{currCard.weight}}5kg </span>
+            <span> {{currCard.mode}} </span>
+         </span>
+        </div>  
+        <div class = "row">
+            <div class = "col-md-3 col-sm-4 col-xs-4 connected_users_precise_location">
+                <span class = "connected_users_from_precise_location">{{currCard.from.area}}</span>
+                <span class = "connected_users_to_precise_location">{{currCard.to.area}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div ui-view>
+    <!-- Under Card_nav will come here -->
+    </div>
+</div>
+

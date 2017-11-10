@@ -1,0 +1,23 @@
+<div class="container-fluid view" >
+	<div class="row">
+		<div class="col-md-6">
+			<ul>
+				<div class="row" ng-repeat="user in users">	
+					<div class="col-sm-6">
+						<a ng-click="showUser(user)">{{user.name}}</a>
+						<p>Travelling from: {{user.address_from}}</p>
+						<p>Travelling to: {{user.address_to}}</p>
+					</div>
+					<div class="col-sm-3">
+						<button type="button" class="btn btn-invite btn-block">"Send invite"</button>
+					</div>
+				</div>
+
+			</ul>
+		</div>
+
+		<div class="col-md-3">
+			{{currUser}}
+		</div>
+	</div>
+</div>

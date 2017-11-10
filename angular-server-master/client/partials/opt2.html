@@ -1,0 +1,16 @@
+<div class = "col-md-8 new_pakit_right_box">
+    <div class = "new_pakit_inner_box">
+        <h1>Name attribute dekhna hai opt kai form ka</h1>
+        <form class = "new_pakit_form" ng-submit="submit()" novalidate>
+            <p><label id = "from_source_label" class = "new_pakit_label">From(Source)</label></p>
+            <p class = "new_pakit_input_feild"><img src = "image/source.svg"><input type = "text" id = "from_input" class = "new_pakit_input" required g-places-autocomplete ng-model="travelling_from"  name="field1" ng-blur="store()" ng-required="true" autocomplete="off" /></p>
+            <p><label id = "to_destination_label" class = "new_pakit_label">To(Destination)</label></p>
+            <p class = "new_pakit_input_feild"><img src = "image/destination.svg"><input type = "text" id = "destination_input" class = "new_pakit_input" required g-places-autocomplete ng-model="travelling_to"  name="field2" ng-blur="store()" ng-required="true" autocomplete="off"/></p>
+            <p><label id = "flight_date_label" class = "new_pakit_label">Travelling Date</label></p>
+            <p class = "new_pakit_input_feild"><img src = "image/flight.svg"><input type = "date" id = "flight_input" class = "new_pakit_input" required  ng-model="date" ng-blur="store()" name="field3" ng-required="true" autocomplete="off"/></p>
+            <p><label id = "weight_carry_label" class = "new_pakit_label">Weight</label></p>
+            <p class = "new_pakit_input_feild"><img src = "image/suitcase-04.svg"><input type = "text" id = "weight_input" class = "new_pakit_input" required ng-model="weight" ng-blur="store()" name="field4" ng-required="true"/></p>
+            <p id = "new_pakit_input_para"><button class = "new_pakit_input new_pakit_button">POST AND VIEW USERS</button></p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="account_section">
+<div ui-view>
+    <!-- Under Card_nav will come here -->
+</div>
+
+<div class="col-lg-3 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-4 col-xs-offset-0 othercards">
+    <div class="row">
+        <div class="col-lg-12 col-md-5 userprofile_uppercard">
+            <p class="userprofile_headingname"><b>Profile Strength</b></p><img src="image/line.svg" class="img-responsive">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                </div>
+            </div>
+            <p class="progressdesc">Above Average!</p>
+            <p class="percent">70% Verified</p><br>
+            <a href="" class="userprofile_a" ng-click="goProfile()"><p class="userprofile_improve">Improve My Profile</p></a>
+        </div>
+        
+        <div class="col-lg-12 col-md-5 userprofile_lowercard">
+            <div class="row">
+                <div class="col-lg-12 userprofile_loweritems" ng-click="goPast()">
+                    <p class="userprofile_hr">PAST TRIPS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 userprofile_loweritems" ng-click="goContact()">
+                    <p class="userprofile_hr">CONTACT US</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 userprofile_loweritems" ng-click="goFaq()">
+                    <p class="userprofile_hr">FAQS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 userprofile_loweritems" ng-click="goTerms()">
+                    <p class="userprofile_terms">TERMS OF SERVICE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

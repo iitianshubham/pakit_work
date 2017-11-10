@@ -1,0 +1,139 @@
+@media only screen and (max-width: 1197px){
+    .pay_statement_with_checkbox{
+        padding-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1160px){
+    .pay_first_card{
+        padding: 0 10px;
+    }
+    .pay_first_card .pay_baggage_information .pay_baggage_information_span{
+        font-size: 75%;
+    }
+    .pay_first_card .pay_baggage_information .pay_date{
+        text-align: left;
+    }
+    .first_card .baggage_information .pay_weight{
+        text-align: right;
+    }
+    .pay_icons{
+        margin-bottom: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 1050px){
+    .pay_pakit_information{
+        font-size: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 993px){
+    .pay_statement_with_checkbox{
+        padding-bottom: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .pay_first_card .pay_baggage_information .pay_date{
+        text-align: center;
+    }
+    .pay_first_card .pay_baggage_information .pay_weight{
+        text-align: center;
+    }
+    .pay_first_card , .pay_second_card{
+        border-bottom: 1px solid #BFBFBF;
+    }
+    .pay_second_card .pay_pakit_information{
+        text-align: center;
+    }
+    .pay_statement_with_checkbox{
+        margin-bottom: 0px;
+    }
+    .pay_charges{
+        padding: 10px 50px 10px 50px;
+}
+}
+
+
+@media only screen and (max-width: 830px){
+    .pay_money{
+        margin-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #pay_myNavbar ul li{
+        text-align: center;
+    }   
+}
+
+
+@media only screen and (max-width: 550px){
+    .pay_safety_tips{
+        margin-top: 10px;
+        font-size: 80%;
+    }
+    
+    .pay_total_amount_and_net_money{
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 446px){
+    .pay_main_row .pay_main_row_ul .pay_main_row_li{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .new_pakit .pay_main_row_a{
+        padding-right: 15px;
+    }
+    .current_pakit .pay_main_row_a{
+        padding-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 442px){
+    .pay_terms_and_conditions .pay_terms_statement{
+        font-size: 80%;
+        margin-left: 5px;
+    }
+    .pay_safety_tips .pay_safety_tips_ul{
+        font-size: 90%;   
+    }
+    .pay_bill{
+        padding: 10px 10px;
+    }
+    .pay_statement_with_checkbox{
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 350px){
+    .pay_statement_with_checkbox{
+        font-size: 80%;
+    }
+    .pay_statement{
+        padding-left: 0px;
+    }
+    .pay_safety_tips{
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 330px){
+    .pay_Pay_button{
+        font-size: 95%;
+    }
+}

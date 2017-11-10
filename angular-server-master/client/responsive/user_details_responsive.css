@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1260px){
+    .user_details_myNavbar_li{
+		text-align: center;
+	}
+	.user_details_exterior_box{
+		border: none;
+	}
+	.user_details_card_flight_details{
+		padding: 0 10px;
+	}	
+	.user_details_card_baggage_details{
+		padding: 0 20px;
+	}
+	.user_details_left_box{
+		width: 50%;		
+	}
+	.user_details_card_information{
+		clear: both;
+		float: left;
+		margin-left: 10px;
+	} 	
+	.user_details_card_symbols{
+		clear: left;
+		margin-left: 40px;
+	}
+	.user_details_middle_box{
+		width: 50%;
+	}
+	#user_details_map{
+		clear: both;
+		margin-top: 20px;
+		width: 100%;
+		border-radius: 4px;
+	}
+}
+
+
+@media only screen and (max-width: 1000px){
+	.user_details_left_box{
+		width: 100%;
+	}
+	.user_details_middle_box{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.user_details_connected , .user_details_all_users{
+		padding: 0 20px;
+	}
+}
+
+
+@media only screen and (max-width: 446px){
+    .user_details_main_row .user_details_main_row_ul .user_details_main_row_li{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .user_details_new_pakit .user_details_main_row_a{
+        padding-right: 25px;
+    }
+    .user_details_current_pakit .user_details_main_row_a{
+        padding-left: 25px;
+    }
+    .user_details_dots{
+        margin-top: 5px;
+    }
+    .user_details_card_invite:hover{
+        padding: 3.5px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 428px){
+    .user_details_card_flight_details , .user_details_card_baggage_details{
+        display: block;
+        font-size: 80%;
+    }
+    .user_details_card_flight_details{
+        padding-left: 0;
+    }
+    .user_details_card_baggage_details{
+        padding-top: 5px;
+        margin-left: 25px;
+    }
+    .user_details_card_invite:hover{
+        padding: 2px 2px;
+    }   
+    .user_details_card_symbols{
+        margin-left: 0px;
+    }
+    .user_details_card_location , .user_details_card_facebook , .user_details_card_education , .user_details_card_workplace , .user_details_card_rating{
+	padding: 0 4px;
+    }
+}

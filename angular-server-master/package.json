@@ -1,0 +1,23 @@
+{
+  "name": "angular-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uppinder Chugh <uppinderchugh@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-ng-annotate": "^3.0.0",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

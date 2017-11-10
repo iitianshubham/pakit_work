@@ -1,0 +1,80 @@
+<div class="col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-1 col-xs-6 col-xs-offset-1 detailsform_centralcard">
+    <div class="row detailsform_centralcardrow">
+        <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1 detailsform_profilepic">
+            <img src="image/photo.jpg" class="img-responsive"><br>
+                <p class="detailsform_changepic" id="detailsform_changepic" onclick="file()">Change Profile Picture</p>
+                <input type="file" id="detailsform_hiddenfile">
+        </div>
+<!--  -----------------------------------------------Profile picture ends------------------------------------------------------------------- -->
+         <div class="col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-xs-12 col-xs-offset-0 details">
+            <div class="row">
+                <form ng-submit="accUpdate()" novalidate>
+            <div class="form-group detailsform_detailitem">
+                <img src="image/name.svg" class="img-responsive">
+                <label for="textbox"><b>NAME</b></label>
+                <input type="text" class="form-control acc_form_input" id="textbox" required ng-model="acc.name" ng-blur="store()" name="name" ng-required="true"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/email.svg" class="img-responsive">
+                <label for="email"><b>EMAIL</b></label>
+                <input type="email" class="form-control acc_form_input" id="email" required ng-model="acc.email" ng-blur="store()" name="email" ng-required="true"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/phone.svg" class="img-responsive">
+                <label for="phone"><b>PHONE</b></label>
+                <input type="text" class="form-control acc_form_input" id="phone" required ng-model="acc.phone" ng-blur="store()" name="phone" ng-required="true"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/education.svg" class="img-responsive">
+                <label for="education"><b>EDUCATION</b></label>
+                <input type="text" class="form-control acc_form_input" id="education" ng-model="acc.education"  name="field2" ng-required="true" autocomplete="off"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/workplace.svg" class="img-responsive">
+                <label for="workplace"><b>WORKPLACE</b></label>
+                <input type="text" class="form-control acc_form_input" id="workplace" ng-model="acc.workplace"  name="field1" ng-required="true" autocomplete="off"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/hometown.svg" class="img-responsive">
+                <label for="hometown"><b>HOMETOWN</b></label>
+                <input type="text" class="form-control acc_form_input" id="hometown" required  ng-model="acc.hometown" name="field5" ng-required="true" autocomplete="off"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/bank%20account.svg" class="img-responsive">
+                <label for="accountno"><b>BANK ACCOUNT NO.</b></label>
+                <input type="text" class="form-control acc_form_input" id="accountno" required ng-model="acc.bank_num" ng-blur="store()" name="field4" ng-required="true"><br>
+            </div>
+            
+            <div class="form-group detailsform_detailitem">
+                <img src="image/gov%20id.svg" class="img-responsive">
+                <label for="govid"><b>GOVERNMENT ID</b></label>
+                <input type="text" class="form-control acc_form_input" id="govid" required ng-model="acc.id" ng-blur="store()" name="GID" ng-required="true"><br>
+            </div>
+        </form>
+            </div>
+        </div> 
+    </div>
+<!-- -------------------------------------------------Detail items end--------------------------------------------------------------------- -->
+    <div class="row">
+        <div class="col-lg-6 col-md-7 col-xs-12 detailsform_changes">
+            <div class="row">
+                <button type="button" class="btn detailsform_changessave">
+                    <div class="col-lg-6">
+                        <p class="onclickbuttonsave">SAVE CHANGES</p>
+                    </div>
+                </button>
+                <button type="button" class="btn detailsform_discard">
+                    <div class="col-lg-6">
+                        <p class="onclickbuttondiscard">DISCARD CHANGES</p>
+                    </div> 
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

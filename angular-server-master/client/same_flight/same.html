@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home-Pakit</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: 'Gotham-Book'}
+</style>
+
+
+</head>
+
+<body>
+
+<div id="form_box">
+
+
+<div class="container">
+     <form name="form1" ng-submit="submit()" novalidate >
+      <div class="group">      
+      <input type="text" required ng-model="flight"  name="field1" ng-blur="store()" ng-required="true">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Flight No</label>
+       <small ng-show="form1.field3.$touched && form1.field3.$invalid"> Enter valid date </small>
+    </div>
+      
+    <div class="group">      
+      <input type="password" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Password</label>
+    </div>
+    
+      <button id="login_but">POST AND VIEW USERS</button>
+
+  </form>
+    
+  
+</div>
+
+</div>
+</body>
+
+</html>

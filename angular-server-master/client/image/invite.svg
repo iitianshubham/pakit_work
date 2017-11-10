@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 12.3 11.5" style="enable-background:new 0 0 12.3 11.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#40C4FF;}
+	.st1{fill:none;}
+	.st2{fill:#40C4FF;stroke:#40C4FF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<symbol  id="ic_x5F_people" viewBox="0 -24 24 24">
+	<g id="XMLID_2070_">
+		<g id="XMLID_2990_">
+			<path id="XMLID_2991_" class="st0" d="M12-12c2.2,0,4,1.8,4,4c0,2.2-1.8,4-4,4C9.8-4,8-5.8,8-8C8-10.2,9.8-12,12-12z M12-14
+				c-2.7,0-8-1.3-8-4v-2h16v2C20-15.3,14.7-14,12-14z"/>
+		</g>
+	</g>
+	<polygon id="XMLID_2068_" class="st1" points="24,-24 0,-24 0,0 24,0 	"/>
+</symbol>
+<symbol  id="ic_x5F_plus" viewBox="0 -24 24 24">
+	<path id="XMLID_2065_" class="st2" d="M19-13h-6v-6h-2v6H5v2h6v6h2v-6h6V-13z"/>
+	<polygon id="XMLID_2064_" class="st1" points="24,-24 0,-24 0,0 24,0 	"/>
+</symbol>
+<g id="XMLID_2830_">
+	
+		<use xlink:href="#ic_x5F_people"  width="24" height="24" id="XMLID_2832_" x="0" y="-24" transform="matrix(0.6388 0 0 -0.6388 -2.555 -1.2506)" style="overflow:visible;"/>
+	
+		<use xlink:href="#ic_x5F_plus"  width="24" height="24" id="XMLID_2831_" x="0" y="-24" transform="matrix(0.2573 0 0 -0.2573 7.1335 -0.9844)" style="overflow:visible;"/>
+</g>
+</svg>

@@ -1,0 +1,92 @@
+.connected_users_navigation{
+    background-color: deeppink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#connected_users_myNavbar{
+    float: right;
+    margin-top: 10px;
+}
+.connected_users_myNavbar_icons{
+    padding: 10px 20px;
+    text-align: center;
+}
+.connected_users_myNavbar_images{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.navbar_container_fluid{
+  background-color: #E52068;
+  padding: 5px 0;
+  height: 50px;
+}
+/*  ==================================  NAVBAR ENDS   ====================================    */
+
+/*  ==================================  NEW PAKIT AND CURRENT PAKIT TABS STARTS    ====================================    */
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li{
+    display: inline-block;
+    padding: 0px 25px ;
+    margin: 0 15px;
+}
+.connected_users_main_row{
+    text-align: center;	
+    font-family: century gothic , Sans-serif;	
+    margin-top: 65px;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a{
+	position: relative;
+    text-decoration: none;
+    color:  darkgrey;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:hover{
+	color: #000;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.connected_users_main_row .connected_users_main_row_ul .connected_users_main_row_li .connected_users_main_row_a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*  ==================================  NEW PAKIT AND CURRENT PAKIT TABS ENDS    ====================================    */
